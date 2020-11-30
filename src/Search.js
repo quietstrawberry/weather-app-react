@@ -28,7 +28,7 @@ export default function Search(props) {
         <input type="submit" placeholder="submit" />
       </form>
       <h1>{display}</h1>
-      <img className="icon" className="temp" src="/icon.png" width="80" />
+      <img className="temp" src="/icon.png" width="80" alt-text="icon" />
       <h2 className="temp">{temperature}° C|F</h2>
     </div>
   );
