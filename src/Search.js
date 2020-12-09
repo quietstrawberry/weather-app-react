@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import "./styles.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
+
 
 
 export default function Search(props) {
@@ -16,6 +18,7 @@ function handleResponse(response){
   setWeatherData({
       ready:true,
       temperature:response.data.main.temp,
+      date: new Date(response.data.dt*1000),
       humidity:response.data.main.humidity,
       windSpeed:response.data.wind.speed,
       conditions:response.data.weather[0].description,
@@ -39,6 +42,9 @@ function handleResponse(response){
         <input type="submit" placeholder="submit" />
       </form>
       <h1>{weatherData.city}</h1>
+      <br/>
+      <FormattedDate  date={weatherData.date} />
+      <br/>
       <img className="temp" src= {weatherData.icon} width="80" alt={weatherData.description} />
       <h2 className="temp">{Math.round(weatherData.temperature)}° C|F</h2>
     
