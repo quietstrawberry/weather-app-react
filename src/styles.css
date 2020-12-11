@@ -5,8 +5,11 @@
   
     height: 800px;
   }
-  .temp {
+  .temp  {
     display: inline-block;
+    overflow: auto;
+    padding-left:5px;
+    padding-right:5px;
   }
   .conditions {
     display: inline-block;

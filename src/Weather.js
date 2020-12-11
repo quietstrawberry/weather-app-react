@@ -25,7 +25,7 @@ function handleResponse(response){
       windSpeed:response.data.wind.speed,
       conditions:response.data.weather[0].description,
       city:response.data.name,
-      icon:`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      icon:response.data.weather[0].icon,
   })
 
    
