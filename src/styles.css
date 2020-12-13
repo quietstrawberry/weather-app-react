@@ -7,9 +7,12 @@
   }
   .temp  {
     display: inline-block;
-    overflow: auto;
+    
     padding-left:5px;
     padding-right:5px;
+    vertical-align:middle;
+    font-size:36px;
+   
   }
   .conditions {
     display: inline-block;
@@ -21,4 +24,16 @@
     padding-left: 80px;
     text-align: left;
   }
-  
+  .units{
+      font-size:18px;
+      font-weight:lighter;
+      vertical-align:text-top;
+      
+   
+
+      
+  }
+  a{
+      text-decoration:none;
+  }
+ 
