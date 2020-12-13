@@ -3,6 +3,7 @@ import "./styles.css";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 
 
 
@@ -62,6 +63,7 @@ axios.get(apiUrl).then(handleResponse);
         <input type="submit" placeholder="submit" />
       </form>
       <WeatherInfo data={weatherData} />
+      <Forecast  city={weatherData.city} />
  </div>
   );
   }
