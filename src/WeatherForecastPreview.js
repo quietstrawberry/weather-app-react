@@ -23,8 +23,9 @@ return(
 <div className="WeatherForecast">
     <div className="time">
     <h4 >{hours()}</h4> 
-    <h4 className="Forecast1"><ForecastIcon  code={props.data.weather[0].icon}/></h4>
+    <h4 className="Forecast1"><ForecastIcon code={props.data.weather[0].icon}/></h4>
    <h4 className="Forecast1" >{temperature()}</h4>
+   
   </div>
 
 

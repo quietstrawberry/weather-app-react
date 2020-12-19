@@ -1,10 +1,10 @@
-.WeatherForecast canvas{
-    
+.WeatherForecast {
+  
   
     
    
 }
-.Forecast1{
+.Forecast1 {
     display: inline-block;
     
     padding-left:5px;
@@ -12,9 +12,22 @@
     vertical-align:middle;
     font-size:16px;
     
+    
+
+    
+    
    
 }
+ .ForecastIcon canvas{
+     all:none;
+    color:gray;
+    size:30;
 
+ }
+
+.Forecast1 canvas{
+    color:gray;
+}
    
 
     
@@ -26,4 +39,18 @@
 }
 h4{
     margin:0 auto;
+}
+.time{
+  
+    
+}
+.ForecastBox {
+    background:rgba(255,255,255,0.3);
+    padding:20px 10px 10px 10px;
+    border-radius:25px;
+    text-align:center;
+    max-width: 500px;
+    display:block;
+    margin:0 auto;
+    font-size:18px;
 }

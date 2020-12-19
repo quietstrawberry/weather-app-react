@@ -28,14 +28,14 @@ const codeMapping={
 }
 
     return (
-        <h2 className="temp">
+        
         <ReactAnimatedWeather
         icon= {codeMapping[props.code]}
-        color= "blue"
+        color= "black"
         size={64}
         animate= {true}
         />
-        </h2>
+        
 
     ); 
     }      

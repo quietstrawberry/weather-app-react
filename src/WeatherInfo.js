@@ -8,16 +8,19 @@ import "./styles.css";
 export default function WeatherInfo(props){
     return (
         <div className="WeatherInfo">
-        <h1>{props.data.city}</h1>
-        <br/>
-        <FormattedDate  date={props.data.date} />
-        <br/>
-        <div className="temp">
+        <div >
+        <h1 >{props.data.city}</h1>
+        </div>
+        
+        <div className="temp" >
         <WeatherIcon className="temp" code={props.data.icon} />
         </div>
         <div className="temp" >
         <Temperature className="temp" celcius={props.data.temperature} />
         </div>
+        <br/>
+        <FormattedDate  date={props.data.date} />
+        <br/>
         
       
       <br />

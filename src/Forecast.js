@@ -15,9 +15,10 @@ export default function Forecast(props){
     }
     if(loaded && props.city===forecast.city.name)
 { return (
-    <div>
+    <div >
+        <h1 className="ForecastBox">
 
-    <h4 className="HourlyForecast"><WeatherForecastPreview  data={forecast.list[0]}  /></h4>
+    <h4 className="HourlyForecast"><WeatherForecastPreview  data={forecast.list[0]}     /></h4>
     <h4 className="HourlyForecast"><WeatherForecastPreview data={forecast.list[1]}  /></h4>
     <h4 className="HourlyForecast"><WeatherForecastPreview data={forecast.list[2]}  /></h4>
     <h4 className="HourlyForecast"> <WeatherForecastPreview data={forecast.list[3]}  /></h4>
@@ -25,7 +26,7 @@ export default function Forecast(props){
     <h4 className="HourlyForecast"> <WeatherForecastPreview data={forecast.list[5]}  /></h4>
 
     
-   
+    </h1>
     </div>
    
    
